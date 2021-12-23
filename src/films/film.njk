@@ -1,0 +1,59 @@
+---
+layout: base
+pagination:
+    data: films
+    size: 1
+    alias: film
+    addAllPagesToCollections: true
+tags: film
+permalink: "films/{{ film.title | slug }}/"
+eleventyComputed:
+  title: "{{ film.title }}"
+---
+<div class="film">
+  <div class="film__banner" style="background-image: url({{ film.movie_banner }});"></div>
+  <div class="film__container container">
+    <article class="film__article">
+      <div class="film__content">
+        <h1 class="film__title">{{ title | safe }}</h1>
+        <p>{{ film.description}}</p>
+        <ul>
+          <li><strong>Release date:</strong> {{ film.release_date }}</li>
+          <li><strong>Director:</strong> {{ film.director }}</li>
+          <li><strong>Producer:</strong> {{ film.producer }}</li>
+          <li><strong>Running time:</strong> {{ film.running_time }} minutes</li>
+          <li><strong>RT score:</strong> {{ film.rt_score }}</li>
+          <li><strong>Original title:</strong> {{ film.original_title }}</li>
+          <li><strong>Original title romanized:</strong> {{ film.original_title_romanised }}</li>
+        </ul>
+        {% if film.peopleProcessed.length %}
+          <table>
+            <caption><strong>People</strong></caption>
+            <thead>
+              <tr>
+                <td>Name</td>
+                <td>Gender</td>
+                <td>Age</td>
+                <td>Eye color</td>
+              </tr>
+            </thead>
+            <tbody>
+              {% for person in film.peopleProcessed %}
+                <tr>
+                  <td><a href="https://www.google.com/search?q=Studio Ghibli {{ person.name }}&tbm=isch" target="_blank">{{ person.name }}</a></td>
+                  <td>{{ person.gender }}</td>
+                  <td>{{ person.age }}</td>
+                  <td>{{ person.eye_color }}</td>
+                </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        {% endif %}
+      </div>
+      <div class="film__image">
+        <img src="{{film.image}}" alt="Poster for {{film.title}}" />
+      </div>
+    </article>
+    {{ film | debug | safe }}
+  </div>
+</div>

@@ -1,0 +1,32 @@
+---
+title: Vehicles
+layout: container
+---
+<div class="container">
+  <h1>{{ title | safe }}</h1>
+</div>
+<article class="vehicles-teaser__article">
+  <table>
+    <thead>
+      <tr>
+        <td>Name</td>
+        <td>Description</td>
+        <td>Vehicle class</td>
+        <td>length</td>
+        <td>Pilot</td>
+      </tr>
+    </thead>
+    <tbody>
+      {% for vehicle in vehicles %}
+        <tr>
+          <td><a href="https://www.google.com/search?q=Studio Ghibli {{ vehicle.name }}&tbm=isch" target="_blank">{{ vehicle.name }}</a></td>
+          <td>{{ vehicle.description }}</td>
+          <td>{{ vehicle.vehicle_class }}</td>
+          <td>{{ vehicle.length }}</td>
+          <td>{{ vehicle.pilot }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</article>
+{{ vehicles[0] | debug | safe }}

@@ -1,0 +1,16 @@
+{
+  "name": "studio-ghibli-demo",
+  "version": "1.0.0",
+  "description": "Eleventy demo using the Studio Ghibli API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy-cache-assets": "^2.3.0",
+    "js-yaml": "^3.14.1"
+  }
+}

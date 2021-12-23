@@ -1,0 +1,32 @@
+---
+title: Species
+layout: container
+---
+<div class="container">
+  <h1>{{ title | safe }}</h1>
+</div>
+<article class="people-teaser__article">
+  <table>
+    <thead>
+      <tr>
+        <td>Name</td>
+        <td>Classification</td>
+        <td>Age</td>
+        <td>Eye color</td>
+        <td>Hair color</td>
+      </tr>
+    </thead>
+    <tbody>
+      {% for speciesItem in species %}
+        <tr>
+          <td><a href="https://www.google.com/search?q=Studio Ghibli {{ speciesItem.name }}&tbm=isch" target="_blank">{{ speciesItem.name }}</a></td>
+          <td>{{ speciesItem.classification }}</td>
+          <td>{{ speciesItem.age }}</td>
+          <td>{{ speciesItem.eye_colors }}</td>
+          <td>{{ speciesItem.hair_colors }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</article>
+{{ species[0] | debug | safe }}

@@ -1,0 +1,28 @@
+---
+title: Films
+layout: container
+---
+<div class="container">
+  <h1>{{ title | safe }}</h1>
+</div>
+<ul class="film-teasers">
+{% for film in films %}
+  <li class="film-teaser">
+    <a class="film-teaser__link" href="/films/{{ film.title | slug }}/">
+      <article class="film-teaser__article">
+        <div class="film-teaser__image">
+          <img src="{{film.image}}" alt="Poster for {{film.title}}" />
+        </div>
+        <div class="film-teaser__content">
+          <h2 class="film-teaser__title">{{ film.title }}</h2>
+          <ul>
+            <li><strong>Director:</strong> {{ film.director }}</li>
+            <li><strong>Release date:</strong> {{ film.release_date }}</li>
+          </ul>
+        </div>
+      </article>
+    </a>
+  </li>
+{% endfor %}
+</ul>
+{{ films[0] | debug | safe }}

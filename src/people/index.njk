@@ -1,0 +1,30 @@
+---
+title: People
+layout: container
+---
+<div class="container">
+  <h1>{{ title | safe }}</h1>
+</div>
+<article class="people-teaser__article">
+  <table>
+    <thead>
+      <tr>
+        <td>Name</td>
+        <td>Gender</td>
+        <td>Age</td>
+        <td>Eye color</td>
+      </tr>
+    </thead>
+    <tbody>
+      {% for person in people %}
+        <tr>
+          <td><a href="https://www.google.com/search?q=Studio Ghibli {{ person.name }}&tbm=isch" target="_blank">{{ person.name }}</a></td>
+          <td>{{ person.gender }}</td>
+          <td>{{ person.age }}</td>
+          <td>{{ person.eye_color }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</article>
+{{ people[0] | debug | safe }}

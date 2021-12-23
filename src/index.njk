@@ -1,0 +1,12 @@
+---
+title: Home
+layout: container
+---
+<article>
+  This is the home page
+  <ul>
+  {%- for post in collections.all -%}
+    <li>{{ post.data.title }}</li>
+  {%- endfor -%}
+  </ul>
+</article>

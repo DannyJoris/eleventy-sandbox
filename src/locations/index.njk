@@ -1,0 +1,30 @@
+---
+title: Locations
+layout: container
+---
+<div class="container">
+  <h1>{{ title | safe }}</h1>
+</div>
+<article class="people-teaser__article">
+  <table>
+    <thead>
+      <tr>
+        <td>Name</td>
+        <td>Climate</td>
+        <td>Terrain</td>
+        <td>Surface water</td>
+      </tr>
+    </thead>
+    <tbody>
+      {% for location in locations %}
+        <tr>
+          <td><a href="https://www.google.com/search?q=Studio Ghibli {{ location.name }}&tbm=isch" target="_blank">{{ location.name }}</a></td>
+          <td>{{ location.climate }}</td>
+          <td>{{ location.terrain }}</td>
+          <td>{{ location.surface_water }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</article>
+{{ locations[0] | debug | safe }}
