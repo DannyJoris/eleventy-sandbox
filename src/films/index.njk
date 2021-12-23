@@ -8,7 +8,8 @@ layout: container
 <ul class="film-teasers">
 {% for film in films %}
   <li class="film-teaser">
-    <a class="film-teaser__link" href="/films/{{ film.title | slug }}/">
+    {% set slug = film.title | slug %}
+    <a class="film-teaser__link" href="{{ ['/films/', slug] | join | url }}/">
       <article class="film-teaser__article">
         <div class="film-teaser__image">
           <img src="{{film.image}}" alt="Poster for {{film.title}}" />

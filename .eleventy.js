@@ -52,6 +52,7 @@ module.exports = eleventyConfig => {
       output: '_site',
       includes: '_includes',
       data: '_data',
+      pathPrefix: "/eleventy-sandbox/"
     },
     passthroughFileCopy: true
   };

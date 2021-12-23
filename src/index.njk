@@ -3,10 +3,10 @@ title: Home
 layout: container
 ---
 <article>
-  This is the home page
+  <h2>All tagged pages</h2>
   <ul>
   {%- for post in collections.all -%}
-    <li>{{ post.data.title }}</li>
+    <li>{{ post.data.title | safe }}</li>
   {%- endfor -%}
   </ul>
 </article>
