@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <link rel="stylesheet" href="/assets/main.css">
+    <title>Films | Studio Ghibli API Eleventy Demo</title>
+  </head>
+  <body>
+    <header class="header">
+  <nav>
+    <ul>
+      <li><strong><a href="/">Studio Ghibli API Eleventy Demo</a></strong></li>
+    </ul>
+    <ul>
+      <li><a href="/films/">Films</a></li>
+      <li><a href="/people/">People</a></li>
+      <li><a href="/locations/">Locations</a></li>
+      <li><a href="/species/">Species</a></li>
+      <li><a href="/vehicles/">Vehicles</a></li>
+    </ul>
+  </nav>
+</header>
+    <main>
+      <div class="container">
+  <div class="container">
+  <h1>Films</h1>
+</div>
+<ul class="film-teasers">
+
+  <li class="film-teaser">
+    <a class="film-teaser__link" href="/films/castle-in-the-sky/">
+      <article class="film-teaser__article">
+        <div class="film-teaser__image">
+          <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/npOnzAbLh6VOIu3naU5QaEcTepo.jpg" alt="Poster for Castle in the Sky" />
+        </div>
+        <div class="film-teaser__content">
+          <h2 class="film-teaser__title">Castle in the Sky</h2>
+          <ul>
+            <li><strong>Director:</strong> Hayao Miyazaki</li>
+            <li><strong>Release date:</strong> 1986</li>
+          </ul>
+        </div>
+      </article>
+    </a>
+  </li>
+
+  <li class="film-teaser">
+    <a class="film-teaser__link" href="/films/grave-of-the-fireflies/">
+      <article class="film-teaser__article">
+        <div class="film-teaser__image">
+          <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/qG3RYlIVpTYclR9TYIsy8p7m7AT.jpg" alt="Poster for Grave of the Fireflies" />
+        </div>
+        <div class="film-teaser__content">
+          <h2 class="film-teaser__title">Grave of the Fireflies</h2>
+          <ul>
+            <li><strong>Director:</strong> Isao Takahata</li>
+            <li><strong>Release date:</strong> 1988</li>
+          </ul>
+        </div>
+      </article>
+    </a>
+  </li>
+
+  <li class="film-teaser">
+    <a class="film-teaser__link" href="/films/my-neighbor-totoro/">
+      <article class="film-teaser__article">
+        <div class="film-teaser__image">
+          <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/rtGDOeG9LzoerkDGZF9dnVeLppL.jpg" alt="Poster for My Neighbor Totoro" />
+        </div>
+        <div class="film-teaser__content">
+          <h2 class="film-teaser__title">My Neighbor Totoro</h2>
+          <ul>
+            <li><strong>Director:</strong> Hayao Miyazaki</li>
+            <li><strong>Release date:</strong> 1988</li>
+          </ul>
+        </div>
+      </article>
+    </a>
+  </li>
+
+  <li class="film-teaser">
+    <a class="film-teaser__link" href="/films/kikis-delivery-service/">
+      <article class="film-teaser__article">
+        <div class="film-teaser__image">
+          <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/7nO5DUMnGUuXrA4r2h6ESOKQRrx.jpg" alt="Poster for Kiki&#39;s Delivery Service" />
+        </div>
+        <div class="film-teaser__content">
+          <h2 class="film-teaser__title">Kiki&#39;s Delivery Service</h2>
+          <ul>
+            <li><strong>Director:</strong> Hayao Miyazaki</li>
+            <li><strong>Release date:</strong> 1989</li>
+          </ul>
+        </div>
+      </article>
+    </a>
+  </li>
+
+  <li class="film-teaser">
+    <a class="film-teaser__link" href="/films/only-yesterday/">
+      <article class="film-teaser__article">
+        <div class="film-teaser__image">
+          <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/xjJU6rwzLX7Jk8HFQfVW6H5guMC.jpg" alt="Poster for Only Yesterday" />
+        </div>
+        <div class="film-teaser__content">
+          <h2 class="film-teaser__title">Only Yesterday</h2>
+          <ul>
+            <li><strong>Director:</strong> Isao Takahata</li>
+            <li><strong>Release date:</strong> 1991</li>
+          </ul>
+        </div>
+      </article>
+    </a>
+  </li>
+
+  <li class="film-teaser">
+    <a class="film-teaser__link" href="/films/porco-rosso/">
+      <article class="film-teaser__article">
+        <div class="film-teaser__image">
+          <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/byKAndF6KQSDpGxp1mTr23jPbYp.jpg" alt="Poster for Porco Rosso" />
+        </div>
+        <div class="film-teaser__content">
+          <h2 class="film-teaser__title">Porco Rosso</h2>
+          <ul>
+            <li><strong>Director:</strong> Hayao Miyazaki</li>
+            <li><strong>Release date:</strong> 1992</li>
+          </ul>
+        </div>
+      </article>
+    </a>
+  </li>
+
+  <li class="film-teaser">
+    <a class="film-teaser__link" href="/films/pom-poko/">
+      <article class="film-teaser__article">
+        <div class="film-teaser__image">
+          <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/kowo9E1e1JcWLXj9cCvAOFZcy5n.jpg" alt="Poster for Pom Poko" />
+        </div>
+        <div class="film-teaser__content">
+          <h2 class="film-teaser__title">Pom Poko</h2>
+          <ul>
+            <li><strong>Director:</strong> Isao Takahata</li>
+            <li><strong>Release date:</strong> 1994</li>
+          </ul>
+        </div>
+      </article>
+    </a>
+  </li>
+
+  <li class="film-teaser">
+    <a class="film-teaser__link" href="/films/whisper-of-the-heart/">
+      <article class="film-teaser__article">
+        <div class="film-teaser__image">
+          <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/5E3Hvbu0bg38ouYf6chGftVGqZ7.jpg" alt="Poster for Whisper of the Heart" />
+        </div>
+        <div class="film-teaser__content">
+          <h2 class="film-teaser__title">Whisper of the Heart</h2>
+          <ul>
+            <li><strong>Director:</strong> Yoshifumi Kondō</li>
+            <li><strong>Release date:</strong> 1995</li>
+          </ul>
+        </div>
+      </article>
+    </a>
+  </li>
+
+  <li class="film-teaser">
+    <a class="film-teaser__link" href="/films/princess-mononoke/">
+      <article class="film-teaser__article">
+        <div class="film-teaser__image">
+          <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/jHWmNr7m544fJ8eItsfNk8fs2Ed.jpg" alt="Poster for Princess Mononoke" />
+        </div>
+        <div class="film-teaser__content">
+          <h2 class="film-teaser__title">Princess Mononoke</h2>
+          <ul>
+            <li><strong>Director:</strong> Hayao Miyazaki</li>
+            <li><strong>Release date:</strong> 1997</li>
+          </ul>
+        </div>
+      </article>
+    </a>
+  </li>
+
+  <li class="film-teaser">
+    <a class="film-teaser__link" href="/films/my-neighbors-the-yamadas/">
+      <article class="film-teaser__article">
+        <div class="film-teaser__image">
+          <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/wTGuHmMIBBgKakY80J1D52VvQKI.jpg" alt="Poster for My Neighbors the Yamadas" />
+        </div>
+        <div class="film-teaser__content">
+          <h2 class="film-teaser__title">My Neighbors the Yamadas</h2>
+          <ul>
+            <li><strong>Director:</strong> Isao Takahata</li>
+            <li><strong>Release date:</strong> 1999</li>
+          </ul>
+        </div>
+      </article>
+    </a>
+  </li>
+
+  <li class="film-teaser">
+    <a class="film-teaser__link" href="/films/spirited-away/">
+      <article class="film-teaser__article">
+        <div class="film-teaser__image">
+          <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg" alt="Poster for Spirited Away" />
+        </div>
+        <div class="film-teaser__content">
+          <h2 class="film-teaser__title">Spirited Away</h2>
+          <ul>
+            <li><strong>Director:</strong> Hayao Miyazaki</li>
+            <li><strong>Release date:</strong> 2001</li>
+          </ul>
+        </div>
+      </article>
+    </a>
+  </li>
+
+  <li class="film-teaser">
+    <a class="film-teaser__link" href="/films/the-cat-returns/">
+      <article class="film-teaser__article">
+        <div class="film-teaser__image">
+          <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/avPMO5cnaGHgLaNiAIhy33WoQLm.jpg" alt="Poster for The Cat Returns" />
+        </div>
+        <div class="film-teaser__content">
+          <h2 class="film-teaser__title">The Cat Returns</h2>
+          <ul>
+            <li><strong>Director:</strong> Hiroyuki Morita</li>
+            <li><strong>Release date:</strong> 2002</li>
+          </ul>
+        </div>
+      </article>
+    </a>
+  </li>
+
+  <li class="film-teaser">
+    <a class="film-teaser__link" href="/films/howls-moving-castle/">
+      <article class="film-teaser__article">
+        <div class="film-teaser__image">
+          <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/TkTPELv4kC3u1lkloush8skOjE.jpg" alt="Poster for Howl&#39;s Moving Castle" />
+        </div>
+        <div class="film-teaser__content">
+          <h2 class="film-teaser__title">Howl&#39;s Moving Castle</h2>
+          <ul>
+            <li><strong>Director:</strong> Hayao Miyazaki</li>
+            <li><strong>Release date:</strong> 2004</li>
+          </ul>
+        </div>
+      </article>
+    </a>
+  </li>
+
+  <li class="film-teaser">
+    <a class="film-teaser__link" href="/films/tales-from-earthsea/">
+      <article class="film-teaser__article">
+        <div class="film-teaser__image">
+          <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/67yYwCPq7NbxSF6BIIXCMD34sY0.jpg" alt="Poster for Tales from Earthsea" />
+        </div>
+        <div class="film-teaser__content">
+          <h2 class="film-teaser__title">Tales from Earthsea</h2>
+          <ul>
+            <li><strong>Director:</strong> Gorō Miyazaki</li>
+            <li><strong>Release date:</strong> 2006</li>
+          </ul>
+        </div>
+      </article>
+    </a>
+  </li>
+
+  <li class="film-teaser">
+    <a class="film-teaser__link" href="/films/ponyo/">
+      <article class="film-teaser__article">
+        <div class="film-teaser__image">
+          <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/mikKSEdk5kLhflWXbp4S5mmHsDo.jpg" alt="Poster for Ponyo" />
+        </div>
+        <div class="film-teaser__content">
+          <h2 class="film-teaser__title">Ponyo</h2>
+          <ul>
+            <li><strong>Director:</strong> Hayao Miyazaki</li>
+            <li><strong>Release date:</strong> 2008</li>
+          </ul>
+        </div>
+      </article>
+    </a>
+  </li>
+
+  <li class="film-teaser">
+    <a class="film-teaser__link" href="/films/arrietty/">
+      <article class="film-teaser__article">
+        <div class="film-teaser__image">
+          <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/oc2OB2KDmSRDMelKEAA1n4YRQL0.jpg" alt="Poster for Arrietty" />
+        </div>
+        <div class="film-teaser__content">
+          <h2 class="film-teaser__title">Arrietty</h2>
+          <ul>
+            <li><strong>Director:</strong> Hiromasa Yonebayashi</li>
+            <li><strong>Release date:</strong> 2010</li>
+          </ul>
+        </div>
+      </article>
+    </a>
+  </li>
+
+  <li class="film-teaser">
+    <a class="film-teaser__link" href="/films/from-up-on-poppy-hill/">
+      <article class="film-teaser__article">
+        <div class="film-teaser__image">
+          <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/rRLYX4RZIyloHSJwvZKAhphAjiB.jpg" alt="Poster for From Up on Poppy Hill" />
+        </div>
+        <div class="film-teaser__content">
+          <h2 class="film-teaser__title">From Up on Poppy Hill</h2>
+          <ul>
+            <li><strong>Director:</strong> Gorō Miyazaki</li>
+            <li><strong>Release date:</strong> 2011</li>
+          </ul>
+        </div>
+      </article>
+    </a>
+  </li>
+
+  <li class="film-teaser">
+    <a class="film-teaser__link" href="/films/the-wind-rises/">
+      <article class="film-teaser__article">
+        <div class="film-teaser__image">
+          <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/jfwSexzlIzaOgxP9A8bTA6t8YYb.jpg" alt="Poster for The Wind Rises" />
+        </div>
+        <div class="film-teaser__content">
+          <h2 class="film-teaser__title">The Wind Rises</h2>
+          <ul>
+            <li><strong>Director:</strong> Hayao Miyazaki</li>
+            <li><strong>Release date:</strong> 2013</li>
+          </ul>
+        </div>
+      </article>
+    </a>
+  </li>
+
+  <li class="film-teaser">
+    <a class="film-teaser__link" href="/films/the-tale-of-the-princess-kaguya/">
+      <article class="film-teaser__article">
+        <div class="film-teaser__image">
+          <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/mWRQNlWXYYfd2z4FRm99MsgHgiA.jpg" alt="Poster for The Tale of the Princess Kaguya" />
+        </div>
+        <div class="film-teaser__content">
+          <h2 class="film-teaser__title">The Tale of the Princess Kaguya</h2>
+          <ul>
+            <li><strong>Director:</strong> Isao Takahata</li>
+            <li><strong>Release date:</strong> 2013</li>
+          </ul>
+        </div>
+      </article>
+    </a>
+  </li>
+
+  <li class="film-teaser">
+    <a class="film-teaser__link" href="/films/when-marnie-was-there/">
+      <article class="film-teaser__article">
+        <div class="film-teaser__image">
+          <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/vug1dvDI1tSa60Z8qjCuUE7ntkO.jpg" alt="Poster for When Marnie Was There" />
+        </div>
+        <div class="film-teaser__content">
+          <h2 class="film-teaser__title">When Marnie Was There</h2>
+          <ul>
+            <li><strong>Director:</strong> Hiromasa Yonebayashi</li>
+            <li><strong>Release date:</strong> 2014</li>
+          </ul>
+        </div>
+      </article>
+    </a>
+  </li>
+
+  <li class="film-teaser">
+    <a class="film-teaser__link" href="/films/the-red-turtle/">
+      <article class="film-teaser__article">
+        <div class="film-teaser__image">
+          <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/wOBU3SLjQ9358Km9YWYasPZyebp.jpg" alt="Poster for The Red Turtle" />
+        </div>
+        <div class="film-teaser__content">
+          <h2 class="film-teaser__title">The Red Turtle</h2>
+          <ul>
+            <li><strong>Director:</strong> Michaël Dudok de Wit</li>
+            <li><strong>Release date:</strong> 2016</li>
+          </ul>
+        </div>
+      </article>
+    </a>
+  </li>
+
+</ul>
+<pre>{
+  id: '2baf70d1-42bb-4437-b551-e5fed5a87abe',
+  title: 'Castle in the Sky',
+  original_title: '天空の城ラピュタ',
+  original_title_romanised: 'Tenkū no shiro Rapyuta',
+  image: 'https://image.tmdb.org/t/p/w600_and_h900_bestv2/npOnzAbLh6VOIu3naU5QaEcTepo.jpg',
+  movie_banner: 'https://image.tmdb.org/t/p/w533_and_h300_bestv2/3cyjYtLWCBE1uvWINHFsFnE8LUK.jpg',
+  description: "The orphan Sheeta inherited a mysterious crystal that links her to the mythical sky-kingdom of Laputa. With the help of resourceful Pazu and a rollicking band of sky pirates, she makes her way to the ruins of the once-great civilization. Sheeta and Pazu must outwit the evil Muska, who plans to use Laputa's science to make himself ruler of the world.",
+  director: 'Hayao Miyazaki',
+  producer: 'Isao Takahata',
+  release_date: '1986',
+  running_time: '124',
+  rt_score: '95',
+  people: [
+    'https://ghibliapi.herokuapp.com/people/598f7048-74ff-41e0-92ef-87dc1ad980a9',
+    'https://ghibliapi.herokuapp.com/people/fe93adf2-2f3a-4ec4-9f68-5422f1b87c01',
+    'https://ghibliapi.herokuapp.com/people/3bc0b41e-3569-4d20-ae73-2da329bf0786',
+    'https://ghibliapi.herokuapp.com/people/40c005ce-3725-4f15-8409-3e1b1b14b583',
+    'https://ghibliapi.herokuapp.com/people/5c83c12a-62d5-4e92-8672-33ac76ae1fa0',
+    'https://ghibliapi.herokuapp.com/people/e08880d0-6938-44f3-b179-81947e7873fc',
+    'https://ghibliapi.herokuapp.com/people/2a1dad70-802a-459d-8cc2-4ebd8821248b'
+  ],
+  species: [
+    'https://ghibliapi.herokuapp.com/species/af3910a6-429f-4c74-9ad5-dfe1c4aa04f2'
+  ],
+  locations: [ 'https://ghibliapi.herokuapp.com/locations/' ],
+  vehicles: [
+    'https://ghibliapi.herokuapp.com/vehicles/4e09b023-f650-4747-9ab9-eacf14540cfb'
+  ],
+  url: 'https://ghibliapi.herokuapp.com/films/2baf70d1-42bb-4437-b551-e5fed5a87abe',
+  peopleProcessed: [
+    {
+      id: '598f7048-74ff-41e0-92ef-87dc1ad980a9',
+      name: 'Lusheeta Toel Ul Laputa',
+      gender: 'Female',
+      age: '13',
+      eye_color: 'Black',
+      hair_color: 'Black',
+      films: [Array],
+      species: 'https://ghibliapi.herokuapp.com/species/af3910a6-429f-4c74-9ad5-dfe1c4aa04f2',
+      url: 'https://ghibliapi.herokuapp.com/people/598f7048-74ff-41e0-92ef-87dc1ad980a9'
+    },
+    {
+      id: 'fe93adf2-2f3a-4ec4-9f68-5422f1b87c01',
+      name: 'Pazu',
+      gender: 'Male',
+      age: '13',
+      eye_color: 'Black',
+      hair_color: 'Brown',
+      films: [Array],
+      species: 'https://ghibliapi.herokuapp.com/species/af3910a6-429f-4c74-9ad5-dfe1c4aa04f2',
+      url: 'https://ghibliapi.herokuapp.com/people/fe93adf2-2f3a-4ec4-9f68-5422f1b87c01'
+    },
+    {
+      id: '3bc0b41e-3569-4d20-ae73-2da329bf0786',
+      name: 'Captain Dola',
+      gender: 'Female',
+      age: '60',
+      eye_color: 'Black',
+      hair_color: 'Peach',
+      films: [Array],
+      species: 'https://ghibliapi.herokuapp.com/species/af3910a6-429f-4c74-9ad5-dfe1c4aa04f2',
+      url: 'https://ghibliapi.herokuapp.com/people/3bc0b41e-3569-4d20-ae73-2da329bf0786'
+    },
+    {
+      id: '40c005ce-3725-4f15-8409-3e1b1b14b583',
+      name: 'Colonel Muska',
+      gender: 'Male',
+      age: '33',
+      eye_color: 'Grey',
+      hair_color: 'Brown',
+      films: [Array],
+      species: 'https://ghibliapi.herokuapp.com/species/af3910a6-429f-4c74-9ad5-dfe1c4aa04f2',
+      url: 'https://ghibliapi.herokuapp.com/people/40c005ce-3725-4f15-8409-3e1b1b14b583'
+    },
+    {
+      id: '5c83c12a-62d5-4e92-8672-33ac76ae1fa0',
+      name: 'General Mouro',
+      gender: 'Male',
+      age: 'Unspecified/Adult',
+      eye_color: 'Black',
+      hair_color: 'None',
+      films: [Array],
+      species: 'https://ghibliapi.herokuapp.com/species/af3910a6-429f-4c74-9ad5-dfe1c4aa04f2',
+      url: 'https://ghibliapi.herokuapp.com/people/5c83c12a-62d5-4e92-8672-33ac76ae1fa0'
+    },
+    {
+      id: 'e08880d0-6938-44f3-b179-81947e7873fc',
+      name: 'Uncle Pom',
+      gender: 'Male',
+      age: 'Unspecified/Elderly',
+      eye_color: 'Black',
+      hair_color: 'White',
+      films: [Array],
+      species: 'https://ghibliapi.herokuapp.com/species/af3910a6-429f-4c74-9ad5-dfe1c4aa04f2',
+      url: 'https://ghibliapi.herokuapp.com/people/e08880d0-6938-44f3-b179-81947e7873fc'
+    },
+    {
+      id: '2a1dad70-802a-459d-8cc2-4ebd8821248b',
+      name: 'Laputian Robot',
+      gender: 'NA',
+      age: 'Really Old',
+      eye_color: 'Black',
+      hair_color: 'NA',
+      films: [Array],
+      species: 'https://ghibliapi.herokuapp.com/species/',
+      url: 'https://ghibliapi.herokuapp.com/people/2a1dad70-802a-459d-8cc2-4ebd8821248b'
+    }
+  ]
+}</pre>
+
+</div>
+    </main>
+  </body>
+</html>

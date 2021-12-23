@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <link rel="stylesheet" href="/assets/main.css">
+    <title>From Up on Poppy Hill | Studio Ghibli API Eleventy Demo</title>
+  </head>
+  <body>
+    <header class="header">
+  <nav>
+    <ul>
+      <li><strong><a href="/">Studio Ghibli API Eleventy Demo</a></strong></li>
+    </ul>
+    <ul>
+      <li><a href="/films/">Films</a></li>
+      <li><a href="/people/">People</a></li>
+      <li><a href="/locations/">Locations</a></li>
+      <li><a href="/species/">Species</a></li>
+      <li><a href="/vehicles/">Vehicles</a></li>
+    </ul>
+  </nav>
+</header>
+    <main>
+      <div class="film">
+  <div class="film__banner" style="background-image: url(https://image.tmdb.org/t/p/original/xtPBZYaWQMQxRpy7mkdk5n1bTxs.jpg);"></div>
+  <div class="film__container container">
+    <article class="film__article">
+      <div class="film__content">
+        <h1 class="film__title">From Up on Poppy Hill</h1>
+        <p>The story is set in 1963 in Yokohama. Kokuriko Manor sits on a hill overlooking the harbour. A 16 year-old girl, Umi, lives in that house. Every morning she raises a signal flag facing the sea. The flag means “I pray for safe voyages”. A 17 year-old boy, Shun, always sees this flag from the sea as he rides a tugboat to school. Gradually the pair are drawn to each other but they are faced with a sudden trial. Even so, they keep going without running from facing the hardships of reality.</p>
+        <ul>
+          <li><strong>Release date:</strong> 2011</li>
+          <li><strong>Director:</strong> Gorō Miyazaki</li>
+          <li><strong>Producer:</strong> Toshio Suzuki</li>
+          <li><strong>Running time:</strong> 91 minutes</li>
+          <li><strong>RT score:</strong> 83</li>
+          <li><strong>Original title:</strong> コクリコ坂から</li>
+          <li><strong>Original title romanized:</strong> Kokuriko zaka kara</li>
+        </ul>
+        
+      </div>
+      <div class="film__image">
+        <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/rRLYX4RZIyloHSJwvZKAhphAjiB.jpg" alt="Poster for From Up on Poppy Hill" />
+      </div>
+    </article>
+    <pre>{
+  id: '45db04e4-304a-4933-9823-33f389e8d74d',
+  title: 'From Up on Poppy Hill',
+  original_title: 'コクリコ坂から',
+  original_title_romanised: 'Kokuriko zaka kara',
+  image: 'https://image.tmdb.org/t/p/w600_and_h900_bestv2/rRLYX4RZIyloHSJwvZKAhphAjiB.jpg',
+  movie_banner: 'https://image.tmdb.org/t/p/original/xtPBZYaWQMQxRpy7mkdk5n1bTxs.jpg',
+  description: 'The story is set in 1963 in Yokohama. Kokuriko Manor sits on a hill overlooking the harbour. A 16 year-old girl, Umi, lives in that house. Every morning she raises a signal flag facing the sea. The flag means “I pray for safe voyages”. A 17 year-old boy, Shun, always sees this flag from the sea as he rides a tugboat to school. Gradually the pair are drawn to each other but they are faced with a sudden trial. Even so, they keep going without running from facing the hardships of reality.',
+  director: 'Gorō Miyazaki',
+  producer: 'Toshio Suzuki',
+  release_date: '2011',
+  running_time: '91',
+  rt_score: '83',
+  people: [ 'https://ghibliapi.herokuapp.com/people/' ],
+  species: [
+    'https://ghibliapi.herokuapp.com/species/af3910a6-429f-4c74-9ad5-dfe1c4aa04f2'
+  ],
+  locations: [ 'https://ghibliapi.herokuapp.com/locations/' ],
+  vehicles: [ 'https://ghibliapi.herokuapp.com/vehicles/' ],
+  url: 'https://ghibliapi.herokuapp.com/films/45db04e4-304a-4933-9823-33f389e8d74d',
+  peopleProcessed: []
+}</pre>
+  </div>
+</div>
+    </main>
+  </body>
+</html>

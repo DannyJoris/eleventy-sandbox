@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <link rel="stylesheet" href="/assets/main.css">
+    <title>Only Yesterday | Studio Ghibli API Eleventy Demo</title>
+  </head>
+  <body>
+    <header class="header">
+  <nav>
+    <ul>
+      <li><strong><a href="/">Studio Ghibli API Eleventy Demo</a></strong></li>
+    </ul>
+    <ul>
+      <li><a href="/films/">Films</a></li>
+      <li><a href="/people/">People</a></li>
+      <li><a href="/locations/">Locations</a></li>
+      <li><a href="/species/">Species</a></li>
+      <li><a href="/vehicles/">Vehicles</a></li>
+    </ul>
+  </nav>
+</header>
+    <main>
+      <div class="film">
+  <div class="film__banner" style="background-image: url(https://image.tmdb.org/t/p/w533_and_h300_bestv2/isCrlWWI4JrdLKAUAwFb5cjAsH4.jpg);"></div>
+  <div class="film__container container">
+    <article class="film__article">
+      <div class="film__content">
+        <h1 class="film__title">Only Yesterday</h1>
+        <p>It’s 1982, and Taeko is 27 years old, unmarried, and has lived her whole life in Tokyo. She decides to visit her family in the countryside, and as the train travels through the night, memories flood back of her younger years: the first immature stirrings of romance, the onset of puberty, and the frustrations of math and boys. At the station she is met by young farmer Toshio, and the encounters with him begin to reconnect her to forgotten longings. In lyrical switches between the present and the past, Taeko contemplates the arc of her life, and wonders if she has been true to the dreams of her childhood self.</p>
+        <ul>
+          <li><strong>Release date:</strong> 1991</li>
+          <li><strong>Director:</strong> Isao Takahata</li>
+          <li><strong>Producer:</strong> Toshio Suzuki</li>
+          <li><strong>Running time:</strong> 118 minutes</li>
+          <li><strong>RT score:</strong> 100</li>
+          <li><strong>Original title:</strong> おもひでぽろぽろ</li>
+          <li><strong>Original title romanized:</strong> Omoide poro poro</li>
+        </ul>
+        
+      </div>
+      <div class="film__image">
+        <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/xjJU6rwzLX7Jk8HFQfVW6H5guMC.jpg" alt="Poster for Only Yesterday" />
+      </div>
+    </article>
+    <pre>{
+  id: '4e236f34-b981-41c3-8c65-f8c9000b94e7',
+  title: 'Only Yesterday',
+  original_title: 'おもひでぽろぽろ',
+  original_title_romanised: 'Omoide poro poro',
+  image: 'https://image.tmdb.org/t/p/w600_and_h900_bestv2/xjJU6rwzLX7Jk8HFQfVW6H5guMC.jpg',
+  movie_banner: 'https://image.tmdb.org/t/p/w533_and_h300_bestv2/isCrlWWI4JrdLKAUAwFb5cjAsH4.jpg',
+  description: 'It’s 1982, and Taeko is 27 years old, unmarried, and has lived her whole life in Tokyo. She decides to visit her family in the countryside, and as the train travels through the night, memories flood back of her younger years: the first immature stirrings of romance, the onset of puberty, and the frustrations of math and boys. At the station she is met by young farmer Toshio, and the encounters with him begin to reconnect her to forgotten longings. In lyrical switches between the present and the past, Taeko contemplates the arc of her life, and wonders if she has been true to the dreams of her childhood self.',
+  director: 'Isao Takahata',
+  producer: 'Toshio Suzuki',
+  release_date: '1991',
+  running_time: '118',
+  rt_score: '100',
+  people: [ 'https://ghibliapi.herokuapp.com/people/' ],
+  species: [
+    'https://ghibliapi.herokuapp.com/species/af3910a6-429f-4c74-9ad5-dfe1c4aa04f2'
+  ],
+  locations: [ 'https://ghibliapi.herokuapp.com/locations/' ],
+  vehicles: [ 'https://ghibliapi.herokuapp.com/vehicles/' ],
+  url: 'https://ghibliapi.herokuapp.com/films/4e236f34-b981-41c3-8c65-f8c9000b94e7',
+  peopleProcessed: []
+}</pre>
+  </div>
+</div>
+    </main>
+  </body>
+</html>

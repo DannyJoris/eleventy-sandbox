@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <link rel="stylesheet" href="/assets/main.css">
+    <title>Kiki&#39;s Delivery Service | Studio Ghibli API Eleventy Demo</title>
+  </head>
+  <body>
+    <header class="header">
+  <nav>
+    <ul>
+      <li><strong><a href="/">Studio Ghibli API Eleventy Demo</a></strong></li>
+    </ul>
+    <ul>
+      <li><a href="/films/">Films</a></li>
+      <li><a href="/people/">People</a></li>
+      <li><a href="/locations/">Locations</a></li>
+      <li><a href="/species/">Species</a></li>
+      <li><a href="/vehicles/">Vehicles</a></li>
+    </ul>
+  </nav>
+</header>
+    <main>
+      <div class="film">
+  <div class="film__banner" style="background-image: url(https://image.tmdb.org/t/p/original/h5pAEVma835u8xoE60kmLVopLct.jpg);"></div>
+  <div class="film__container container">
+    <article class="film__article">
+      <div class="film__content">
+        <h1 class="film__title">Kiki&#39;s Delivery Service</h1>
+        <p>A young witch, on her mandatory year of independent life, finds fitting into a new community difficult while she supports herself by running an air courier service.</p>
+        <ul>
+          <li><strong>Release date:</strong> 1989</li>
+          <li><strong>Director:</strong> Hayao Miyazaki</li>
+          <li><strong>Producer:</strong> Hayao Miyazaki</li>
+          <li><strong>Running time:</strong> 102 minutes</li>
+          <li><strong>RT score:</strong> 96</li>
+          <li><strong>Original title:</strong> 魔女の宅急便</li>
+          <li><strong>Original title romanized:</strong> Majo no takkyūbin</li>
+        </ul>
+        
+          <table>
+            <caption><strong>People</strong></caption>
+            <thead>
+              <tr>
+                <td>Name</td>
+                <td>Gender</td>
+                <td>Age</td>
+                <td>Eye color</td>
+              </tr>
+            </thead>
+            <tbody>
+              
+                <tr>
+                  <td><a href="https://www.google.com/search?q=Studio Ghibli Kiki&tbm=isch" target="_blank">Kiki</a></td>
+                  <td></td>
+                  <td>13</td>
+                  <td>Black</td>
+                </tr>
+              
+                <tr>
+                  <td><a href="https://www.google.com/search?q=Studio Ghibli Jiji&tbm=isch" target="_blank">Jiji</a></td>
+                  <td>Male</td>
+                  <td>NA</td>
+                  <td>Black</td>
+                </tr>
+              
+                <tr>
+                  <td><a href="https://www.google.com/search?q=Studio Ghibli Osono&tbm=isch" target="_blank">Osono</a></td>
+                  <td>Female</td>
+                  <td>26</td>
+                  <td>Black</td>
+                </tr>
+              
+                <tr>
+                  <td><a href="https://www.google.com/search?q=Studio Ghibli Ursula&tbm=isch" target="_blank">Ursula</a></td>
+                  <td>Female</td>
+                  <td>18</td>
+                  <td>Black</td>
+                </tr>
+              
+                <tr>
+                  <td><a href="https://www.google.com/search?q=Studio Ghibli Tombo&tbm=isch" target="_blank">Tombo</a></td>
+                  <td>Male</td>
+                  <td>13</td>
+                  <td>Black</td>
+                </tr>
+              
+                <tr>
+                  <td><a href="https://www.google.com/search?q=Studio Ghibli Madame&tbm=isch" target="_blank">Madame</a></td>
+                  <td>Female</td>
+                  <td>60</td>
+                  <td>Cyan</td>
+                </tr>
+              
+            </tbody>
+          </table>
+        
+      </div>
+      <div class="film__image">
+        <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/7nO5DUMnGUuXrA4r2h6ESOKQRrx.jpg" alt="Poster for Kiki&#39;s Delivery Service" />
+      </div>
+    </article>
+    <pre>{
+  id: 'ea660b10-85c4-4ae3-8a5f-41cea3648e3e',
+  title: "Kiki's Delivery Service",
+  original_title: '魔女の宅急便',
+  original_title_romanised: 'Majo no takkyūbin',
+  image: 'https://image.tmdb.org/t/p/w600_and_h900_bestv2/7nO5DUMnGUuXrA4r2h6ESOKQRrx.jpg',
+  movie_banner: 'https://image.tmdb.org/t/p/original/h5pAEVma835u8xoE60kmLVopLct.jpg',
+  description: 'A young witch, on her mandatory year of independent life, finds fitting into a new community difficult while she supports herself by running an air courier service.',
+  director: 'Hayao Miyazaki',
+  producer: 'Hayao Miyazaki',
+  release_date: '1989',
+  running_time: '102',
+  rt_score: '96',
+  people: [
+    'https://ghibliapi.herokuapp.com/people/2409052a-9029-4e8d-bfaf-70fd82c8e48d',
+    'https://ghibliapi.herokuapp.com/people/7151abc6-1a9e-4e6a-9711-ddb50ea572ec',
+    'https://ghibliapi.herokuapp.com/people/1c1a8054-3a34-4185-bfcf-e8011506f09a',
+    'https://ghibliapi.herokuapp.com/people/bc838920-7849-43ea-bfb8-7d5e98dc20b6',
+    'https://ghibliapi.herokuapp.com/people/33f5fea9-c21b-490b-90e0-c4051c372826',
+    'https://ghibliapi.herokuapp.com/people/d1de1c0e-3fcd-4cef-94eb-bb95cc2314aa'
+  ],
+  species: [
+    'https://ghibliapi.herokuapp.com/species/af3910a6-429f-4c74-9ad5-dfe1c4aa04f2',
+    'https://ghibliapi.herokuapp.com/species/603428ba-8a86-4b0b-a9f1-65df6abef3d3'
+  ],
+  locations: [ 'https://ghibliapi.herokuapp.com/locations/' ],
+  vehicles: [ 'https://ghibliapi.herokuapp.com/vehicles/' ],
+  url: 'https://ghibliapi.herokuapp.com/films/ea660b10-85c4-4ae3-8a5f-41cea3648e3e',
+  peopleProcessed: [
+    {
+      id: '2409052a-9029-4e8d-bfaf-70fd82c8e48d',
+      name: 'Kiki',
+      gander: 'Female',
+      age: '13',
+      eye_color: 'Black',
+      hair_color: 'Brown',
+      films: [Array],
+      species: 'https://ghibliapi.herokuapp.com/species/af3910a6-429f-4c74-9ad5-dfe1c4aa04f2',
+      url: 'https://ghibliapi.herokuapp.com/people/2409052a-9029-4e8d-bfaf-70fd82c8e48d'
+    },
+    {
+      id: '7151abc6-1a9e-4e6a-9711-ddb50ea572ec',
+      name: 'Jiji',
+      gender: 'Male',
+      age: 'NA',
+      eye_color: 'Black',
+      hair_color: 'Black',
+      films: [Array],
+      species: 'https://ghibliapi.herokuapp.com/species/603428ba-8a86-4b0b-a9f1-65df6abef3d3',
+      url: 'https://ghibliapi.herokuapp.com/people/7151abc6-1a9e-4e6a-9711-ddb50ea572ec'
+    },
+    {
+      id: '1c1a8054-3a34-4185-bfcf-e8011506f09a',
+      name: 'Osono',
+      gender: 'Female',
+      age: '26',
+      eye_color: 'Black',
+      hair_color: 'Red',
+      films: [Array],
+      species: 'https://ghibliapi.herokuapp.com/species/af3910a6-429f-4c74-9ad5-dfe1c4aa04f2',
+      url: 'https://ghibliapi.herokuapp.com/people/1c1a8054-3a34-4185-bfcf-e8011506f09a'
+    },
+    {
+      id: 'bc838920-7849-43ea-bfb8-7d5e98dc20b6',
+      name: 'Ursula',
+      gender: 'Female',
+      age: '18',
+      eye_color: 'Black',
+      hair_color: 'Reddish brown',
+      films: [Array],
+      species: 'https://ghibliapi.herokuapp.com/species/af3910a6-429f-4c74-9ad5-dfe1c4aa04f2',
+      url: 'https://ghibliapi.herokuapp.com/people/bc838920-7849-43ea-bfb8-7d5e98dc20b6'
+    },
+    {
+      id: '33f5fea9-c21b-490b-90e0-c4051c372826',
+      name: 'Tombo',
+      gender: 'Male',
+      age: '13',
+      eye_color: 'Black',
+      hair_color: 'Dirty Blond',
+      films: [Array],
+      species: 'https://ghibliapi.herokuapp.com/species/af3910a6-429f-4c74-9ad5-dfe1c4aa04f2',
+      url: 'https://ghibliapi.herokuapp.com/people/33f5fea9-c21b-490b-90e0-c4051c372826'
+    },
+    {
+      id: 'd1de1c0e-3fcd-4cef-94eb-bb95cc2314aa',
+      name: 'Madame',
+      gender: 'Female',
+      age: '60',
+      eye_color: 'Cyan',
+      hair_color: 'Light Gray',
+      films: [Array],
+      species: 'https://ghibliapi.herokuapp.com/species/af3910a6-429f-4c74-9ad5-dfe1c4aa04f2',
+      url: 'https://ghibliapi.herokuapp.com/people/d1de1c0e-3fcd-4cef-94eb-bb95cc2314aa'
+    }
+  ]
+}</pre>
+  </div>
+</div>
+    </main>
+  </body>
+</html>

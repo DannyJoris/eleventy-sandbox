@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <link rel="stylesheet" href="/assets/main.css">
+    <title>Pom Poko | Studio Ghibli API Eleventy Demo</title>
+  </head>
+  <body>
+    <header class="header">
+  <nav>
+    <ul>
+      <li><strong><a href="/">Studio Ghibli API Eleventy Demo</a></strong></li>
+    </ul>
+    <ul>
+      <li><a href="/films/">Films</a></li>
+      <li><a href="/people/">People</a></li>
+      <li><a href="/locations/">Locations</a></li>
+      <li><a href="/species/">Species</a></li>
+      <li><a href="/vehicles/">Vehicles</a></li>
+    </ul>
+  </nav>
+</header>
+    <main>
+      <div class="film">
+  <div class="film__banner" style="background-image: url(https://image.tmdb.org/t/p/original/jScPd0u0jeo66l8gwDl7W9hDUnM.jpg);"></div>
+  <div class="film__container container">
+    <article class="film__article">
+      <div class="film__content">
+        <h1 class="film__title">Pom Poko</h1>
+        <p>As the human city development encroaches on the raccoon population&#39;s forest and meadow habitat, the raccoons find themselves faced with the very real possibility of extinction. In response, the raccoons engage in a desperate struggle to stop the construction and preserve their home.</p>
+        <ul>
+          <li><strong>Release date:</strong> 1994</li>
+          <li><strong>Director:</strong> Isao Takahata</li>
+          <li><strong>Producer:</strong> Toshio Suzuki</li>
+          <li><strong>Running time:</strong> 119 minutes</li>
+          <li><strong>RT score:</strong> 78</li>
+          <li><strong>Original title:</strong> 平成狸合戦ぽんぽこ</li>
+          <li><strong>Original title romanized:</strong> Heisei tanuki gassen Ponpoko</li>
+        </ul>
+        
+      </div>
+      <div class="film__image">
+        <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/kowo9E1e1JcWLXj9cCvAOFZcy5n.jpg" alt="Poster for Pom Poko" />
+      </div>
+    </article>
+    <pre>{
+  id: '1b67aa9a-2e4a-45af-ac98-64d6ad15b16c',
+  title: 'Pom Poko',
+  original_title: '平成狸合戦ぽんぽこ',
+  original_title_romanised: 'Heisei tanuki gassen Ponpoko',
+  image: 'https://image.tmdb.org/t/p/w600_and_h900_bestv2/kowo9E1e1JcWLXj9cCvAOFZcy5n.jpg',
+  movie_banner: 'https://image.tmdb.org/t/p/original/jScPd0u0jeo66l8gwDl7W9hDUnM.jpg',
+  description: "As the human city development encroaches on the raccoon population's forest and meadow habitat, the raccoons find themselves faced with the very real possibility of extinction. In response, the raccoons engage in a desperate struggle to stop the construction and preserve their home.",
+  director: 'Isao Takahata',
+  producer: 'Toshio Suzuki',
+  release_date: '1994',
+  running_time: '119',
+  rt_score: '78',
+  people: [ 'https://ghibliapi.herokuapp.com/people/' ],
+  species: [
+    'https://ghibliapi.herokuapp.com/species/af3910a6-429f-4c74-9ad5-dfe1c4aa04f2'
+  ],
+  locations: [ 'https://ghibliapi.herokuapp.com/locations/' ],
+  vehicles: [ 'https://ghibliapi.herokuapp.com/vehicles/' ],
+  url: 'https://ghibliapi.herokuapp.com/films/1b67aa9a-2e4a-45af-ac98-64d6ad15b16c',
+  peopleProcessed: []
+}</pre>
+  </div>
+</div>
+    </main>
+  </body>
+</html>

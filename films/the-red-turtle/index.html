@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <link rel="stylesheet" href="/assets/main.css">
+    <title>The Red Turtle | Studio Ghibli API Eleventy Demo</title>
+  </head>
+  <body>
+    <header class="header">
+  <nav>
+    <ul>
+      <li><strong><a href="/">Studio Ghibli API Eleventy Demo</a></strong></li>
+    </ul>
+    <ul>
+      <li><a href="/films/">Films</a></li>
+      <li><a href="/people/">People</a></li>
+      <li><a href="/locations/">Locations</a></li>
+      <li><a href="/species/">Species</a></li>
+      <li><a href="/vehicles/">Vehicles</a></li>
+    </ul>
+  </nav>
+</header>
+    <main>
+      <div class="film">
+  <div class="film__banner" style="background-image: url(https://image.tmdb.org/t/p/original/kjXdW5H3myRBmTMYgKayjphr2FA.jpg);"></div>
+  <div class="film__container container">
+    <article class="film__article">
+      <div class="film__content">
+        <h1 class="film__title">The Red Turtle</h1>
+        <p>A man set adrift by a storm wakes up on a beach. He discovers that he is on a deserted island with plenty of fresh water, fruit and a dense bamboo forest. He builds a raft from bamboo and attempts to sail away, but his raft is destroyed by an unseen monster in the sea, forcing him back to the island. He tries again with another, larger raft, but is again foiled by the creature. A third attempt again ends with the raft destroyed, but this time he is confronted by a giant red turtle, which stares at him, and forces him back to the island.</p>
+        <ul>
+          <li><strong>Release date:</strong> 2016</li>
+          <li><strong>Director:</strong> Michaël Dudok de Wit</li>
+          <li><strong>Producer:</strong> Toshio Suzuki, Isao Takahata, Vincent Maraval, Pascal Caucheteux, Grégoire Sorlat</li>
+          <li><strong>Running time:</strong> 80 minutes</li>
+          <li><strong>RT score:</strong> 93</li>
+          <li><strong>Original title:</strong> レッドタートル ある島の物語</li>
+          <li><strong>Original title romanized:</strong> Reddotātoru aru shima no monogatari</li>
+        </ul>
+        
+      </div>
+      <div class="film__image">
+        <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/wOBU3SLjQ9358Km9YWYasPZyebp.jpg" alt="Poster for The Red Turtle" />
+      </div>
+    </article>
+    <pre>{
+  id: 'd868e6ec-c44a-405b-8fa6-f7f0f8cfb500',
+  title: 'The Red Turtle',
+  original_title: 'レッドタートル ある島の物語',
+  original_title_romanised: 'Reddotātoru aru shima no monogatari',
+  image: 'https://image.tmdb.org/t/p/w600_and_h900_bestv2/wOBU3SLjQ9358Km9YWYasPZyebp.jpg',
+  movie_banner: 'https://image.tmdb.org/t/p/original/kjXdW5H3myRBmTMYgKayjphr2FA.jpg',
+  description: 'A man set adrift by a storm wakes up on a beach. He discovers that he is on a deserted island with plenty of fresh water, fruit and a dense bamboo forest. He builds a raft from bamboo and attempts to sail away, but his raft is destroyed by an unseen monster in the sea, forcing him back to the island. He tries again with another, larger raft, but is again foiled by the creature. A third attempt again ends with the raft destroyed, but this time he is confronted by a giant red turtle, which stares at him, and forces him back to the island.',
+  director: 'Michaël Dudok de Wit',
+  producer: 'Toshio Suzuki, Isao Takahata, Vincent Maraval, Pascal Caucheteux, Grégoire Sorlat',
+  release_date: '2016',
+  running_time: '80',
+  rt_score: '93',
+  people: [ 'https://ghibliapi.herokuapp.com/people/' ],
+  species: [ 'https://ghibliapi.herokuapp.com/species/' ],
+  locations: [ 'https://ghibliapi.herokuapp.com/locations/' ],
+  vehicles: [ 'https://ghibliapi.herokuapp.com/vehicles/' ],
+  url: 'https://ghibliapi.herokuapp.com/films/d868e6ec-c44a-405b-8fa6-f7f0f8cfb500',
+  peopleProcessed: []
+}</pre>
+  </div>
+</div>
+    </main>
+  </body>
+</html>

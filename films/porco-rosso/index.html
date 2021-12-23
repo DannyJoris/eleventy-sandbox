@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <link rel="stylesheet" href="/assets/main.css">
+    <title>Porco Rosso | Studio Ghibli API Eleventy Demo</title>
+  </head>
+  <body>
+    <header class="header">
+  <nav>
+    <ul>
+      <li><strong><a href="/">Studio Ghibli API Eleventy Demo</a></strong></li>
+    </ul>
+    <ul>
+      <li><a href="/films/">Films</a></li>
+      <li><a href="/people/">People</a></li>
+      <li><a href="/locations/">Locations</a></li>
+      <li><a href="/species/">Species</a></li>
+      <li><a href="/vehicles/">Vehicles</a></li>
+    </ul>
+  </nav>
+</header>
+    <main>
+      <div class="film">
+  <div class="film__banner" style="background-image: url(https://image.tmdb.org/t/p/original/nAeCzilMRXvGaxiCpv63ZRVRVgh.jpg);"></div>
+  <div class="film__container container">
+    <article class="film__article">
+      <div class="film__content">
+        <h1 class="film__title">Porco Rosso</h1>
+        <p>Porco Rosso, known in Japan as Crimson Pig (Kurenai no Buta) is the sixth animated film by Hayao Miyazaki and released in 1992. You&#39;re introduced to an Italian World War I fighter ace, now living as a freelance bounty hunter chasing &#39;air pirates&#39; in the Adriatic Sea. He has been given a curse that changed his head to that of a pig. Once called Marco Pagot, he is now known to the world as &#39;Porco Rosso&#39;, Italian for &#39;Red Pig.&#39;</p>
+        <ul>
+          <li><strong>Release date:</strong> 1992</li>
+          <li><strong>Director:</strong> Hayao Miyazaki</li>
+          <li><strong>Producer:</strong> Toshio Suzuki</li>
+          <li><strong>Running time:</strong> 93 minutes</li>
+          <li><strong>RT score:</strong> 94</li>
+          <li><strong>Original title:</strong> 紅の豚</li>
+          <li><strong>Original title romanized:</strong> Kurenai no buta</li>
+        </ul>
+        
+      </div>
+      <div class="film__image">
+        <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/byKAndF6KQSDpGxp1mTr23jPbYp.jpg" alt="Poster for Porco Rosso" />
+      </div>
+    </article>
+    <pre>{
+  id: 'ebbb6b7c-945c-41ee-a792-de0e43191bd8',
+  title: 'Porco Rosso',
+  original_title: '紅の豚',
+  original_title_romanised: 'Kurenai no buta',
+  image: 'https://image.tmdb.org/t/p/w600_and_h900_bestv2/byKAndF6KQSDpGxp1mTr23jPbYp.jpg',
+  movie_banner: 'https://image.tmdb.org/t/p/original/nAeCzilMRXvGaxiCpv63ZRVRVgh.jpg',
+  description: "Porco Rosso, known in Japan as Crimson Pig (Kurenai no Buta) is the sixth animated film by Hayao Miyazaki and released in 1992. You're introduced to an Italian World War I fighter ace, now living as a freelance bounty hunter chasing 'air pirates' in the Adriatic Sea. He has been given a curse that changed his head to that of a pig. Once called Marco Pagot, he is now known to the world as 'Porco Rosso', Italian for 'Red Pig.'",
+  director: 'Hayao Miyazaki',
+  producer: 'Toshio Suzuki',
+  release_date: '1992',
+  running_time: '93',
+  rt_score: '94',
+  people: [ 'https://ghibliapi.herokuapp.com/people/' ],
+  species: [
+    'https://ghibliapi.herokuapp.com/species/af3910a6-429f-4c74-9ad5-dfe1c4aa04f2'
+  ],
+  locations: [ 'https://ghibliapi.herokuapp.com/locations/' ],
+  vehicles: [ 'https://ghibliapi.herokuapp.com/vehicles/' ],
+  url: 'https://ghibliapi.herokuapp.com/films/ebbb6b7c-945c-41ee-a792-de0e43191bd8',
+  peopleProcessed: []
+}</pre>
+  </div>
+</div>
+    </main>
+  </body>
+</html>

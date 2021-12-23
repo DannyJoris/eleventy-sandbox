@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <link rel="stylesheet" href="/assets/main.css">
+    <title>Spirited Away | Studio Ghibli API Eleventy Demo</title>
+  </head>
+  <body>
+    <header class="header">
+  <nav>
+    <ul>
+      <li><strong><a href="/">Studio Ghibli API Eleventy Demo</a></strong></li>
+    </ul>
+    <ul>
+      <li><a href="/films/">Films</a></li>
+      <li><a href="/people/">People</a></li>
+      <li><a href="/locations/">Locations</a></li>
+      <li><a href="/species/">Species</a></li>
+      <li><a href="/vehicles/">Vehicles</a></li>
+    </ul>
+  </nav>
+</header>
+    <main>
+      <div class="film">
+  <div class="film__banner" style="background-image: url(https://image.tmdb.org/t/p/original/bSXfU4dwZyBA1vMmXvejdRXBvuF.jpg);"></div>
+  <div class="film__container container">
+    <article class="film__article">
+      <div class="film__content">
+        <h1 class="film__title">Spirited Away</h1>
+        <p>Spirited Away is an Oscar winning Japanese animated film about a ten year old girl who wanders away from her parents along a path that leads to a world ruled by strange and unusual monster-like animals. Her parents have been changed into pigs along with others inside a bathhouse full of these creatures. Will she ever see the world how it once was?</p>
+        <ul>
+          <li><strong>Release date:</strong> 2001</li>
+          <li><strong>Director:</strong> Hayao Miyazaki</li>
+          <li><strong>Producer:</strong> Toshio Suzuki</li>
+          <li><strong>Running time:</strong> 124 minutes</li>
+          <li><strong>RT score:</strong> 97</li>
+          <li><strong>Original title:</strong> 千と千尋の神隠し</li>
+          <li><strong>Original title romanized:</strong> Sen to Chihiro no kamikakushi</li>
+        </ul>
+        
+          <table>
+            <caption><strong>People</strong></caption>
+            <thead>
+              <tr>
+                <td>Name</td>
+                <td>Gender</td>
+                <td>Age</td>
+                <td>Eye color</td>
+              </tr>
+            </thead>
+            <tbody>
+              
+                <tr>
+                  <td><a href="https://www.google.com/search?q=Studio Ghibli Chihiro Ogino&tbm=isch" target="_blank">Chihiro Ogino</a></td>
+                  <td>Female</td>
+                  <td>10</td>
+                  <td>Black</td>
+                </tr>
+              
+            </tbody>
+          </table>
+        
+      </div>
+      <div class="film__image">
+        <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg" alt="Poster for Spirited Away" />
+      </div>
+    </article>
+    <pre>{
+  id: 'dc2e6bd1-8156-4886-adff-b39e6043af0c',
+  title: 'Spirited Away',
+  original_title: '千と千尋の神隠し',
+  original_title_romanised: 'Sen to Chihiro no kamikakushi',
+  image: 'https://image.tmdb.org/t/p/w600_and_h900_bestv2/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg',
+  movie_banner: 'https://image.tmdb.org/t/p/original/bSXfU4dwZyBA1vMmXvejdRXBvuF.jpg',
+  description: 'Spirited Away is an Oscar winning Japanese animated film about a ten year old girl who wanders away from her parents along a path that leads to a world ruled by strange and unusual monster-like animals. Her parents have been changed into pigs along with others inside a bathhouse full of these creatures. Will she ever see the world how it once was?',
+  director: 'Hayao Miyazaki',
+  producer: 'Toshio Suzuki',
+  release_date: '2001',
+  running_time: '124',
+  rt_score: '97',
+  people: [
+    'https://ghibliapi.herokuapp.com/people/8228751c-bdc1-4b8d-a6eb-ca0eb909568f'
+  ],
+  species: [
+    'https://ghibliapi.herokuapp.com/species/af3910a6-429f-4c74-9ad5-dfe1c4aa04f2'
+  ],
+  locations: [ 'https://ghibliapi.herokuapp.com/locations/' ],
+  vehicles: [ 'https://ghibliapi.herokuapp.com/vehicles/' ],
+  url: 'https://ghibliapi.herokuapp.com/films/dc2e6bd1-8156-4886-adff-b39e6043af0c',
+  peopleProcessed: [
+    {
+      id: '8228751c-bdc1-4b8d-a6eb-ca0eb909568f',
+      name: 'Chihiro Ogino',
+      gender: 'Female',
+      age: '10',
+      eye_color: 'Black',
+      hair_color: 'Brown',
+      films: [Array],
+      species: 'https://ghibliapi.herokuapp.com/species/af3910a6-429f-4c74-9ad5-dfe1c4aa04f2',
+      url: 'https://ghibliapi.herokuapp.com/people/8228751c-bdc1-4b8d-a6eb-ca0eb909568f'
+    }
+  ]
+}</pre>
+  </div>
+</div>
+    </main>
+  </body>
+</html>

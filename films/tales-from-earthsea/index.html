@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <link rel="stylesheet" href="/assets/main.css">
+    <title>Tales from Earthsea | Studio Ghibli API Eleventy Demo</title>
+  </head>
+  <body>
+    <header class="header">
+  <nav>
+    <ul>
+      <li><strong><a href="/">Studio Ghibli API Eleventy Demo</a></strong></li>
+    </ul>
+    <ul>
+      <li><a href="/films/">Films</a></li>
+      <li><a href="/people/">People</a></li>
+      <li><a href="/locations/">Locations</a></li>
+      <li><a href="/species/">Species</a></li>
+      <li><a href="/vehicles/">Vehicles</a></li>
+    </ul>
+  </nav>
+</header>
+    <main>
+      <div class="film">
+  <div class="film__banner" style="background-image: url(https://image.tmdb.org/t/p/original/j276noIGGmfi66EnCfewsL2OVTX.jpg);"></div>
+  <div class="film__container container">
+    <article class="film__article">
+      <div class="film__content">
+        <h1 class="film__title">Tales from Earthsea</h1>
+        <p>Something bizarre has come over the land. The kingdom is deteriorating. People are beginning to act strange... What&#39;s even more strange is that people are beginning to see dragons, which shouldn&#39;t enter the world of humans. Due to all these bizarre events, Ged, a wandering wizard, is investigating the cause. During his journey, he meets Prince Arren, a young distraught teenage boy. While Arren may look like a shy young teen, he has a severe dark side, which grants him strength, hatred, ruthlessness and has no mercy, especially when it comes to protecting Teru. For the witch Kumo this is a perfect opportunity. She can use the boy&#39;s &#39;fears&#39; against the very one who would help him, Ged.</p>
+        <ul>
+          <li><strong>Release date:</strong> 2006</li>
+          <li><strong>Director:</strong> Gorō Miyazaki</li>
+          <li><strong>Producer:</strong> Toshio Suzuki</li>
+          <li><strong>Running time:</strong> 116 minutes</li>
+          <li><strong>RT score:</strong> 41</li>
+          <li><strong>Original title:</strong> ゲド戦記</li>
+          <li><strong>Original title romanized:</strong> Gedo senki</li>
+        </ul>
+        
+      </div>
+      <div class="film__image">
+        <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/67yYwCPq7NbxSF6BIIXCMD34sY0.jpg" alt="Poster for Tales from Earthsea" />
+      </div>
+    </article>
+    <pre>{
+  id: '112c1e67-726f-40b1-ac17-6974127bb9b9',
+  title: 'Tales from Earthsea',
+  original_title: 'ゲド戦記',
+  original_title_romanised: 'Gedo senki',
+  image: 'https://image.tmdb.org/t/p/w600_and_h900_bestv2/67yYwCPq7NbxSF6BIIXCMD34sY0.jpg',
+  movie_banner: 'https://image.tmdb.org/t/p/original/j276noIGGmfi66EnCfewsL2OVTX.jpg',
+  description: "Something bizarre has come over the land. The kingdom is deteriorating. People are beginning to act strange... What's even more strange is that people are beginning to see dragons, which shouldn't enter the world of humans. Due to all these bizarre events, Ged, a wandering wizard, is investigating the cause. During his journey, he meets Prince Arren, a young distraught teenage boy. While Arren may look like a shy young teen, he has a severe dark side, which grants him strength, hatred, ruthlessness and has no mercy, especially when it comes to protecting Teru. For the witch Kumo this is a perfect opportunity. She can use the boy's 'fears' against the very one who would help him, Ged.",
+  director: 'Gorō Miyazaki',
+  producer: 'Toshio Suzuki',
+  release_date: '2006',
+  running_time: '116',
+  rt_score: '41',
+  people: [ 'https://ghibliapi.herokuapp.com/people/' ],
+  species: [
+    'https://ghibliapi.herokuapp.com/species/af3910a6-429f-4c74-9ad5-dfe1c4aa04f2'
+  ],
+  locations: [ 'https://ghibliapi.herokuapp.com/locations/' ],
+  vehicles: [ 'https://ghibliapi.herokuapp.com/vehicles/' ],
+  url: 'https://ghibliapi.herokuapp.com/films/112c1e67-726f-40b1-ac17-6974127bb9b9',
+  peopleProcessed: []
+}</pre>
+  </div>
+</div>
+    </main>
+  </body>
+</html>

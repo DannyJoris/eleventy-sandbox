@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <link rel="stylesheet" href="/assets/main.css">
+    <title>My Neighbor Totoro | Studio Ghibli API Eleventy Demo</title>
+  </head>
+  <body>
+    <header class="header">
+  <nav>
+    <ul>
+      <li><strong><a href="/">Studio Ghibli API Eleventy Demo</a></strong></li>
+    </ul>
+    <ul>
+      <li><a href="/films/">Films</a></li>
+      <li><a href="/people/">People</a></li>
+      <li><a href="/locations/">Locations</a></li>
+      <li><a href="/species/">Species</a></li>
+      <li><a href="/vehicles/">Vehicles</a></li>
+    </ul>
+  </nav>
+</header>
+    <main>
+      <div class="film">
+  <div class="film__banner" style="background-image: url(https://image.tmdb.org/t/p/original/etqr6fOOCXQOgwrQXaKwenTSuzx.jpg);"></div>
+  <div class="film__container container">
+    <article class="film__article">
+      <div class="film__content">
+        <h1 class="film__title">My Neighbor Totoro</h1>
+        <p>Two sisters move to the country with their father in order to be closer to their hospitalized mother, and discover the surrounding trees are inhabited by Totoros, magical spirits of the forest. When the youngest runs away from home, the older sister seeks help from the spirits to find her.</p>
+        <ul>
+          <li><strong>Release date:</strong> 1988</li>
+          <li><strong>Director:</strong> Hayao Miyazaki</li>
+          <li><strong>Producer:</strong> Hayao Miyazaki</li>
+          <li><strong>Running time:</strong> 86 minutes</li>
+          <li><strong>RT score:</strong> 93</li>
+          <li><strong>Original title:</strong> となりのトトロ</li>
+          <li><strong>Original title romanized:</strong> Tonari no Totoro</li>
+        </ul>
+        
+          <table>
+            <caption><strong>People</strong></caption>
+            <thead>
+              <tr>
+                <td>Name</td>
+                <td>Gender</td>
+                <td>Age</td>
+                <td>Eye color</td>
+              </tr>
+            </thead>
+            <tbody>
+              
+                <tr>
+                  <td><a href="https://www.google.com/search?q=Studio Ghibli Satsuki Kusakabe&tbm=isch" target="_blank">Satsuki Kusakabe</a></td>
+                  <td>Female</td>
+                  <td>11</td>
+                  <td>Dark Brown/Black</td>
+                </tr>
+              
+                <tr>
+                  <td><a href="https://www.google.com/search?q=Studio Ghibli Mei Kusakabe&tbm=isch" target="_blank">Mei Kusakabe</a></td>
+                  <td>Female</td>
+                  <td>4</td>
+                  <td>Brown</td>
+                </tr>
+              
+                <tr>
+                  <td><a href="https://www.google.com/search?q=Studio Ghibli Tatsuo Kusakabe&tbm=isch" target="_blank">Tatsuo Kusakabe</a></td>
+                  <td>Male</td>
+                  <td>37</td>
+                  <td>Brown</td>
+                </tr>
+              
+                <tr>
+                  <td><a href="https://www.google.com/search?q=Studio Ghibli Yasuko Kusakabe&tbm=isch" target="_blank">Yasuko Kusakabe</a></td>
+                  <td>Female</td>
+                  <td>Adult</td>
+                  <td>Brown</td>
+                </tr>
+              
+                <tr>
+                  <td><a href="https://www.google.com/search?q=Studio Ghibli Totoro&tbm=isch" target="_blank">Totoro</a></td>
+                  <td>NA</td>
+                  <td></td>
+                  <td>Grey</td>
+                </tr>
+              
+                <tr>
+                  <td><a href="https://www.google.com/search?q=Studio Ghibli Chu Totoro&tbm=isch" target="_blank">Chu Totoro</a></td>
+                  <td>NA</td>
+                  <td></td>
+                  <td>Black</td>
+                </tr>
+              
+                <tr>
+                  <td><a href="https://www.google.com/search?q=Studio Ghibli Chibi Totoro&tbm=isch" target="_blank">Chibi Totoro</a></td>
+                  <td>NA</td>
+                  <td></td>
+                  <td>Black</td>
+                </tr>
+              
+                <tr>
+                  <td><a href="https://www.google.com/search?q=Studio Ghibli Catbus&tbm=isch" target="_blank">Catbus</a></td>
+                  <td>Male</td>
+                  <td>NA</td>
+                  <td>Yellow</td>
+                </tr>
+              
+                <tr>
+                  <td><a href="https://www.google.com/search?q=Studio Ghibli Granny&tbm=isch" target="_blank">Granny</a></td>
+                  <td>Female</td>
+                  <td>Elder</td>
+                  <td>Black</td>
+                </tr>
+              
+                <tr>
+                  <td><a href="https://www.google.com/search?q=Studio Ghibli Kanta Ōgaki&tbm=isch" target="_blank">Kanta Ōgaki</a></td>
+                  <td>Male</td>
+                  <td>11</td>
+                  <td>Brown</td>
+                </tr>
+              
+            </tbody>
+          </table>
+        
+      </div>
+      <div class="film__image">
+        <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/rtGDOeG9LzoerkDGZF9dnVeLppL.jpg" alt="Poster for My Neighbor Totoro" />
+      </div>
+    </article>
+    <pre>{
+  id: '58611129-2dbc-4a81-a72f-77ddfc1b1b49',
+  title: 'My Neighbor Totoro',
+  original_title: 'となりのトトロ',
+  original_title_romanised: 'Tonari no Totoro',
+  image: 'https://image.tmdb.org/t/p/w600_and_h900_bestv2/rtGDOeG9LzoerkDGZF9dnVeLppL.jpg',
+  movie_banner: 'https://image.tmdb.org/t/p/original/etqr6fOOCXQOgwrQXaKwenTSuzx.jpg',
+  description: 'Two sisters move to the country with their father in order to be closer to their hospitalized mother, and discover the surrounding trees are inhabited by Totoros, magical spirits of the forest. When the youngest runs away from home, the older sister seeks help from the spirits to find her.',
+  director: 'Hayao Miyazaki',
+  producer: 'Hayao Miyazaki',
+  release_date: '1988',
+  running_time: '86',
+  rt_score: '93',
+  people: [
+    'https://ghibliapi.herokuapp.com/people/986faac6-67e3-4fb8-a9ee-bad077c2e7fe',
+    'https://ghibliapi.herokuapp.com/people/d5df3c04-f355-4038-833c-83bd3502b6b9',
+    'https://ghibliapi.herokuapp.com/people/3031caa8-eb1a-41c6-ab93-dd091b541e11',
+    'https://ghibliapi.herokuapp.com/people/87b68b97-3774-495b-bf80-495a5f3e672d',
+    'https://ghibliapi.herokuapp.com/people/d39deecb-2bd0-4770-8b45-485f26e1381f',
+    'https://ghibliapi.herokuapp.com/people/591524bc-04fe-4e60-8d61-2425e42ffb2a',
+    'https://ghibliapi.herokuapp.com/people/c491755a-407d-4d6e-b58a-240ec78b5061',
+    'https://ghibliapi.herokuapp.com/people/f467e18e-3694-409f-bdb3-be891ade1106',
+    'https://ghibliapi.herokuapp.com/people/08ffbce4-7f94-476a-95bc-76d3c3969c19',
+    'https://ghibliapi.herokuapp.com/people/0f8ef701-b4c7-4f15-bd15-368c7fe38d0a'
+  ],
+  species: [
+    'https://ghibliapi.herokuapp.com/species/af3910a6-429f-4c74-9ad5-dfe1c4aa04f2',
+    'https://ghibliapi.herokuapp.com/species/603428ba-8a86-4b0b-a9f1-65df6abef3d3',
+    'https://ghibliapi.herokuapp.com/species/74b7f547-1577-4430-806c-c358c8b6bcf5'
+  ],
+  locations: [ 'https://ghibliapi.herokuapp.com/locations/' ],
+  vehicles: [ 'https://ghibliapi.herokuapp.com/vehicles/' ],
+  url: 'https://ghibliapi.herokuapp.com/films/58611129-2dbc-4a81-a72f-77ddfc1b1b49',
+  peopleProcessed: [
+    {
+      id: '986faac6-67e3-4fb8-a9ee-bad077c2e7fe',
+      name: 'Satsuki Kusakabe',
+      gender: 'Female',
+      age: '11',
+      eye_color: 'Dark Brown/Black',
+      hair_color: 'Dark Brown',
+      films: [Array],
+      species: 'https://ghibliapi.herokuapp.com/species/af3910a6-429f-4c74-9ad5-dfe1c4aa04f2',
+      url: 'https://ghibliapi.herokuapp.com/people/986faac6-67e3-4fb8-a9ee-bad077c2e7fe'
+    },
+    {
+      id: 'd5df3c04-f355-4038-833c-83bd3502b6b9',
+      name: 'Mei Kusakabe',
+      gender: 'Female',
+      age: '4',
+      eye_color: 'Brown',
+      hair_color: 'Light Brown',
+      films: [Array],
+      species: 'https://ghibliapi.herokuapp.com/species/af3910a6-429f-4c74-9ad5-dfe1c4aa04f2',
+      url: 'https://ghibliapi.herokuapp.com/people/d5df3c04-f355-4038-833c-83bd3502b6b9'
+    },
+    {
+      id: '3031caa8-eb1a-41c6-ab93-dd091b541e11',
+      name: 'Tatsuo Kusakabe',
+      gender: 'Male',
+      age: '37',
+      eye_color: 'Brown',
+      hair_color: 'Dark Brown',
+      films: [Array],
+      species: 'https://ghibliapi.herokuapp.com/species/af3910a6-429f-4c74-9ad5-dfe1c4aa04f2',
+      url: 'https://ghibliapi.herokuapp.com/people/3031caa8-eb1a-41c6-ab93-dd091b541e11'
+    },
+    {
+      id: '87b68b97-3774-495b-bf80-495a5f3e672d',
+      name: 'Yasuko Kusakabe',
+      gender: 'Female',
+      age: 'Adult',
+      eye_color: 'Brown',
+      hair_color: 'Dark Brown',
+      films: [Array],
+      species: 'https://ghibliapi.herokuapp.com/species/af3910a6-429f-4c74-9ad5-dfe1c4aa04f2',
+      url: 'https://ghibliapi.herokuapp.com/people/87b68b97-3774-495b-bf80-495a5f3e672d'
+    },
+    {
+      id: 'd39deecb-2bd0-4770-8b45-485f26e1381f',
+      name: 'Totoro',
+      gender: 'NA',
+      age: '',
+      eye_color: 'Grey',
+      hair_color: 'Grey',
+      films: [Array],
+      species: 'https://ghibliapi.herokuapp.com/species/74b7f547-1577-4430-806c-c358c8b6bcf5',
+      url: 'https://ghibliapi.herokuapp.com/people/d39deecb-2bd0-4770-8b45-485f26e1381f'
+    },
+    {
+      id: '591524bc-04fe-4e60-8d61-2425e42ffb2a',
+      name: 'Chu Totoro',
+      gender: 'NA',
+      age: '',
+      eye_color: 'Black',
+      hair_color: 'Blue',
+      films: [Array],
+      species: 'https://ghibliapi.herokuapp.com/species/74b7f547-1577-4430-806c-c358c8b6bcf5',
+      url: 'https://ghibliapi.herokuapp.com/people/d39deecb-2bd0-4770-8b45-485f26e1381f'
+    },
+    {
+      id: 'c491755a-407d-4d6e-b58a-240ec78b5061',
+      name: 'Chibi Totoro',
+      gender: 'NA',
+      age: '',
+      eye_color: 'Black',
+      hair_color: 'White',
+      films: [Array],
+      species: 'https://ghibliapi.herokuapp.com/species/74b7f547-1577-4430-806c-c358c8b6bcf5',
+      url: 'https://ghibliapi.herokuapp.com/people/d39deecb-2bd0-4770-8b45-485f26e1381f'
+    },
+    {
+      id: 'f467e18e-3694-409f-bdb3-be891ade1106',
+      name: 'Catbus',
+      gender: 'Male',
+      age: 'NA',
+      eye_color: 'Yellow',
+      hair_color: 'Brown',
+      films: [Array],
+      species: 'https://ghibliapi.herokuapp.com/species/603428ba-8a86-4b0b-a9f1-65df6abef3d3',
+      url: 'https://ghibliapi.herokuapp.com/people/f467e18e-3694-409f-bdb3-be891ade1106'
+    },
+    {
+      id: '08ffbce4-7f94-476a-95bc-76d3c3969c19',
+      name: 'Granny',
+      gender: 'Female',
+      age: 'Elder',
+      eye_color: 'Black',
+      hair_color: 'Grey',
+      films: [Array],
+      species: 'https://ghibliapi.herokuapp.com/species/af3910a6-429f-4c74-9ad5-dfe1c4aa04f2',
+      url: 'https://ghibliapi.herokuapp.com/people/08ffbce4-7f94-476a-95bc-76d3c3969c19'
+    },
+    {
+      id: '0f8ef701-b4c7-4f15-bd15-368c7fe38d0a',
+      name: 'Kanta Ōgaki',
+      gender: 'Male',
+      age: '11',
+      eye_color: 'Brown',
+      hair_color: 'Brown',
+      films: [Array],
+      species: 'https://ghibliapi.herokuapp.com/species/af3910a6-429f-4c74-9ad5-dfe1c4aa04f2',
+      url: 'https://ghibliapi.herokuapp.com/people/0f8ef701-b4c7-4f15-bd15-368c7fe38d0a'
+    }
+  ]
+}</pre>
+  </div>
+</div>
+    </main>
+  </body>
+</html>

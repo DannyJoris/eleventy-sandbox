@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <link rel="stylesheet" href="/assets/main.css">
+    <title>Arrietty | Studio Ghibli API Eleventy Demo</title>
+  </head>
+  <body>
+    <header class="header">
+  <nav>
+    <ul>
+      <li><strong><a href="/">Studio Ghibli API Eleventy Demo</a></strong></li>
+    </ul>
+    <ul>
+      <li><a href="/films/">Films</a></li>
+      <li><a href="/people/">People</a></li>
+      <li><a href="/locations/">Locations</a></li>
+      <li><a href="/species/">Species</a></li>
+      <li><a href="/vehicles/">Vehicles</a></li>
+    </ul>
+  </nav>
+</header>
+    <main>
+      <div class="film">
+  <div class="film__banner" style="background-image: url(https://image.tmdb.org/t/p/original/7Z7WVzJsSReG8B0CaPk0bvWD7tK.jpg);"></div>
+  <div class="film__container container">
+    <article class="film__article">
+      <div class="film__content">
+        <h1 class="film__title">Arrietty</h1>
+        <p>14-year-old Arrietty and the rest of the Clock family live in peaceful anonymity as they make their own home from items &#39;borrowed&#39; from the house&#39;s human inhabitants. However, life changes for the Clocks when a human boy discovers Arrietty.</p>
+        <ul>
+          <li><strong>Release date:</strong> 2010</li>
+          <li><strong>Director:</strong> Hiromasa Yonebayashi</li>
+          <li><strong>Producer:</strong> Toshio Suzuki</li>
+          <li><strong>Running time:</strong> 94 minutes</li>
+          <li><strong>RT score:</strong> 95</li>
+          <li><strong>Original title:</strong> 借りぐらしのアリエッティ</li>
+          <li><strong>Original title romanized:</strong> Karigurashi no Arietti</li>
+        </ul>
+        
+      </div>
+      <div class="film__image">
+        <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/oc2OB2KDmSRDMelKEAA1n4YRQL0.jpg" alt="Poster for Arrietty" />
+      </div>
+    </article>
+    <pre>{
+  id: '2de9426b-914a-4a06-a3a0-5e6d9d3886f6',
+  title: 'Arrietty',
+  original_title: '借りぐらしのアリエッティ',
+  original_title_romanised: 'Karigurashi no Arietti',
+  image: 'https://image.tmdb.org/t/p/w600_and_h900_bestv2/oc2OB2KDmSRDMelKEAA1n4YRQL0.jpg',
+  movie_banner: 'https://image.tmdb.org/t/p/original/7Z7WVzJsSReG8B0CaPk0bvWD7tK.jpg',
+  description: "14-year-old Arrietty and the rest of the Clock family live in peaceful anonymity as they make their own home from items 'borrowed' from the house's human inhabitants. However, life changes for the Clocks when a human boy discovers Arrietty.",
+  director: 'Hiromasa Yonebayashi',
+  producer: 'Toshio Suzuki',
+  release_date: '2010',
+  running_time: '94',
+  rt_score: '95',
+  people: [ 'https://ghibliapi.herokuapp.com/people/' ],
+  species: [
+    'https://ghibliapi.herokuapp.com/species/af3910a6-429f-4c74-9ad5-dfe1c4aa04f2'
+  ],
+  locations: [ 'https://ghibliapi.herokuapp.com/locations/' ],
+  vehicles: [ 'https://ghibliapi.herokuapp.com/vehicles/' ],
+  url: 'https://ghibliapi.herokuapp.com/films/2de9426b-914a-4a06-a3a0-5e6d9d3886f6',
+  peopleProcessed: []
+}</pre>
+  </div>
+</div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <link rel="stylesheet" href="/assets/main.css">
+    <title>Princess Mononoke | Studio Ghibli API Eleventy Demo</title>
+  </head>
+  <body>
+    <header class="header">
+  <nav>
+    <ul>
+      <li><strong><a href="/">Studio Ghibli API Eleventy Demo</a></strong></li>
+    </ul>
+    <ul>
+      <li><a href="/films/">Films</a></li>
+      <li><a href="/people/">People</a></li>
+      <li><a href="/locations/">Locations</a></li>
+      <li><a href="/species/">Species</a></li>
+      <li><a href="/vehicles/">Vehicles</a></li>
+    </ul>
+  </nav>
+</header>
+    <main>
+      <div class="film">
+  <div class="film__banner" style="background-image: url(https://image.tmdb.org/t/p/original/6pTqSq0zYIWCsucJys8q5L92kUY.jpg);"></div>
+  <div class="film__container container">
+    <article class="film__article">
+      <div class="film__content">
+        <h1 class="film__title">Princess Mononoke</h1>
+        <p>Ashitaka, a prince of the disappearing Ainu tribe, is cursed by a demonized boar god and must journey to the west to find a cure. Along the way, he encounters San, a young human woman fighting to protect the forest, and Lady Eboshi, who is trying to destroy it. Ashitaka must find a way to bring balance to this conflict.</p>
+        <ul>
+          <li><strong>Release date:</strong> 1997</li>
+          <li><strong>Director:</strong> Hayao Miyazaki</li>
+          <li><strong>Producer:</strong> Toshio Suzuki</li>
+          <li><strong>Running time:</strong> 134 minutes</li>
+          <li><strong>RT score:</strong> 92</li>
+          <li><strong>Original title:</strong> もののけ姫</li>
+          <li><strong>Original title romanized:</strong> Mononoke hime</li>
+        </ul>
+        
+          <table>
+            <caption><strong>People</strong></caption>
+            <thead>
+              <tr>
+                <td>Name</td>
+                <td>Gender</td>
+                <td>Age</td>
+                <td>Eye color</td>
+              </tr>
+            </thead>
+            <tbody>
+              
+                <tr>
+                  <td><a href="https://www.google.com/search?q=Studio Ghibli Ashitaka&tbm=isch" target="_blank">Ashitaka</a></td>
+                  <td>Male</td>
+                  <td>late teens</td>
+                  <td>Brown</td>
+                </tr>
+              
+                <tr>
+                  <td><a href="https://www.google.com/search?q=Studio Ghibli San&tbm=isch" target="_blank">San</a></td>
+                  <td>Female</td>
+                  <td>17</td>
+                  <td>Brown</td>
+                </tr>
+              
+                <tr>
+                  <td><a href="https://www.google.com/search?q=Studio Ghibli Yakul&tbm=isch" target="_blank">Yakul</a></td>
+                  <td>Male</td>
+                  <td>Unknown</td>
+                  <td>Grey</td>
+                </tr>
+              
+                <tr>
+                  <td><a href="https://www.google.com/search?q=Studio Ghibli Shishigami&tbm=isch" target="_blank">Shishigami</a></td>
+                  <td>Male</td>
+                  <td>400</td>
+                  <td>Red</td>
+                </tr>
+              
+                <tr>
+                  <td><a href="https://www.google.com/search?q=Studio Ghibli Moro&tbm=isch" target="_blank">Moro</a></td>
+                  <td>Female</td>
+                  <td>300</td>
+                  <td>Brown</td>
+                </tr>
+              
+                <tr>
+                  <td><a href="https://www.google.com/search?q=Studio Ghibli Eboshi&tbm=isch" target="_blank">Eboshi</a></td>
+                  <td>Female</td>
+                  <td>Unspecified/Adult</td>
+                  <td>Hazel</td>
+                </tr>
+              
+                <tr>
+                  <td><a href="https://www.google.com/search?q=Studio Ghibli Jigo&tbm=isch" target="_blank">Jigo</a></td>
+                  <td>Male</td>
+                  <td>Middle age</td>
+                  <td>Black</td>
+                </tr>
+              
+                <tr>
+                  <td><a href="https://www.google.com/search?q=Studio Ghibli Kohroku&tbm=isch" target="_blank">Kohroku</a></td>
+                  <td>Male</td>
+                  <td>Adult</td>
+                  <td>Black</td>
+                </tr>
+              
+                <tr>
+                  <td><a href="https://www.google.com/search?q=Studio Ghibli Gonza&tbm=isch" target="_blank">Gonza</a></td>
+                  <td>Male</td>
+                  <td>Adult</td>
+                  <td>Grey</td>
+                </tr>
+              
+                <tr>
+                  <td><a href="https://www.google.com/search?q=Studio Ghibli Hii-sama&tbm=isch" target="_blank">Hii-sama</a></td>
+                  <td>Female</td>
+                  <td>Over 50</td>
+                  <td>Brown</td>
+                </tr>
+              
+            </tbody>
+          </table>
+        
+      </div>
+      <div class="film__image">
+        <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/jHWmNr7m544fJ8eItsfNk8fs2Ed.jpg" alt="Poster for Princess Mononoke" />
+      </div>
+    </article>
+    <pre>{
+  id: '0440483e-ca0e-4120-8c50-4c8cd9b965d6',
+  title: 'Princess Mononoke',
+  original_title: 'もののけ姫',
+  original_title_romanised: 'Mononoke hime',
+  image: 'https://image.tmdb.org/t/p/w600_and_h900_bestv2/jHWmNr7m544fJ8eItsfNk8fs2Ed.jpg',
+  movie_banner: 'https://image.tmdb.org/t/p/original/6pTqSq0zYIWCsucJys8q5L92kUY.jpg',
+  description: 'Ashitaka, a prince of the disappearing Ainu tribe, is cursed by a demonized boar god and must journey to the west to find a cure. Along the way, he encounters San, a young human woman fighting to protect the forest, and Lady Eboshi, who is trying to destroy it. Ashitaka must find a way to bring balance to this conflict.',
+  director: 'Hayao Miyazaki',
+  producer: 'Toshio Suzuki',
+  release_date: '1997',
+  running_time: '134',
+  rt_score: '92',
+  people: [
+    'https://ghibliapi.herokuapp.com/people/ba924631-068e-4436-b6de-f3283fa848f0',
+    'https://ghibliapi.herokuapp.com/people/ebe40383-aad2-4208-90ab-698f00c581ab',
+    'https://ghibliapi.herokuapp.com/people/030555b3-4c92-4fce-93fb-e70c3ae3df8b',
+    'https://ghibliapi.herokuapp.com/people/ca568e87-4ce2-4afa-a6c5-51f4ae80a60b',
+    'https://ghibliapi.herokuapp.com/people/e9356bb5-4d4a-4c93-aadc-c83e514bffe3',
+    'https://ghibliapi.herokuapp.com/people/34277bec-7401-43fa-a00a-5aee64b45b08',
+    'https://ghibliapi.herokuapp.com/people/91939012-90b9-46e5-a649-96b898073c82',
+    'https://ghibliapi.herokuapp.com/people/20e3bd33-b35d-41e6-83a4-57ca7f028d38',
+    'https://ghibliapi.herokuapp.com/people/8bccdc78-545b-49f4-a4c8-756163a38c91',
+    'https://ghibliapi.herokuapp.com/people/116bfe1b-3ba8-4fa0-8f72-88537a493cb9'
+  ],
+  species: [
+    'https://ghibliapi.herokuapp.com/species/af3910a6-429f-4c74-9ad5-dfe1c4aa04f2',
+    'https://ghibliapi.herokuapp.com/species/6bc92fdd-b0f4-4286-ad71-1f99fb4a0d1e',
+    'https://ghibliapi.herokuapp.com/species/f25fa661-3073-414d-968a-ab062e3065f7'
+  ],
+  locations: [ 'https://ghibliapi.herokuapp.com/locations/' ],
+  vehicles: [ 'https://ghibliapi.herokuapp.com/vehicles/' ],
+  url: 'https://ghibliapi.herokuapp.com/films/0440483e-ca0e-4120-8c50-4c8cd9b965d6',
+  peopleProcessed: [
+    {
+      id: 'ba924631-068e-4436-b6de-f3283fa848f0',
+      name: 'Ashitaka',
+      gender: 'Male',
+      age: 'late teens',
+      eye_color: 'Brown',
+      hair_color: 'Brown',
+      films: [Array],
+      species: 'https://ghibliapi.herokuapp.com/species/af3910a6-429f-4c74-9ad5-dfe1c4aa04f2',
+      url: 'https://ghibliapi.herokuapp.com/people/ba924631-068e-4436-b6de-f3283fa848f0'
+    },
+    {
+      id: 'ebe40383-aad2-4208-90ab-698f00c581ab',
+      name: 'San',
+      gender: 'Female',
+      age: '17',
+      eye_color: 'Brown',
+      hair_color: 'Brown',
+      films: [Array],
+      species: 'https://ghibliapi.herokuapp.com/species/af3910a6-429f-4c74-9ad5-dfe1c4aa04f2',
+      url: 'https://ghibliapi.herokuapp.com/people/ebe40383-aad2-4208-90ab-698f00c581ab'
+    },
+    {
+      id: '030555b3-4c92-4fce-93fb-e70c3ae3df8b',
+      name: 'Yakul',
+      age: 'Unknown',
+      gender: 'Male',
+      eye_color: 'Grey',
+      hair_color: 'Brown',
+      films: [Array],
+      species: 'https://ghibliapi.herokuapp.com/species/6bc92fdd-b0f4-4286-ad71-1f99fb4a0d1e',
+      url: 'https://ghibliapi.herokuapp.com/people/030555b3-4c92-4fce-93fb-e70c3ae3df8b'
+    },
+    {
+      id: 'ca568e87-4ce2-4afa-a6c5-51f4ae80a60b',
+      name: 'Shishigami',
+      age: '400',
+      gender: 'Male',
+      eye_color: 'Red',
+      hair_color: 'Light Orange',
+      films: [Array],
+      species: 'https://ghibliapi.herokuapp.com/species/6bc92fdd-b0f4-4286-ad71-1f99fb4a0d1e',
+      url: 'https://ghibliapi.herokuapp.com/people/ca568e87-4ce2-4afa-a6c5-51f4ae80a60b'
+    },
+    {
+      id: 'e9356bb5-4d4a-4c93-aadc-c83e514bffe3',
+      name: 'Moro',
+      gender: 'Female',
+      age: '300',
+      eye_color: 'Brown',
+      hair_color: 'White',
+      films: [Array],
+      species: 'https://ghibliapi.herokuapp.com/species/f25fa661-3073-414d-968a-ab062e3065f7',
+      url: 'https://ghibliapi.herokuapp.com/people/e9356bb5-4d4a-4c93-aadc-c83e514bffe3'
+    },
+    {
+      id: '34277bec-7401-43fa-a00a-5aee64b45b08',
+      name: 'Eboshi',
+      gender: 'Female',
+      age: 'Unspecified/Adult',
+      eye_color: 'Hazel',
+      hair_color: 'Black',
+      films: [Array],
+      species: 'https://ghibliapi.herokuapp.com/species/af3910a6-429f-4c74-9ad5-dfe1c4aa04f2',
+      url: 'https://ghibliapi.herokuapp.com/people/34277bec-7401-43fa-a00a-5aee64b45b08'
+    },
+    {
+      id: '91939012-90b9-46e5-a649-96b898073c82',
+      name: 'Jigo',
+      gender: 'Male',
+      age: 'Middle age',
+      eye_color: 'Black',
+      hair_color: 'Brown',
+      films: [Array],
+      species: 'https://ghibliapi.herokuapp.com/species/af3910a6-429f-4c74-9ad5-dfe1c4aa04f2',
+      url: 'https://ghibliapi.herokuapp.com/people/91939012-90b9-46e5-a649-96b898073c82'
+    },
+    {
+      id: '20e3bd33-b35d-41e6-83a4-57ca7f028d38',
+      name: 'Kohroku',
+      gender: 'Male',
+      age: 'Adult',
+      eye_color: 'Black',
+      hair_color: 'Brown',
+      films: [Array],
+      species: 'https://ghibliapi.herokuapp.com/species/af3910a6-429f-4c74-9ad5-dfe1c4aa04f2',
+      url: 'https://ghibliapi.herokuapp.com/people/20e3bd33-b35d-41e6-83a4-57ca7f028d38'
+    },
+    {
+      id: '8bccdc78-545b-49f4-a4c8-756163a38c91',
+      name: 'Gonza',
+      gender: 'Male',
+      age: 'Adult',
+      eye_color: 'Grey',
+      hair_color: 'Bald, but beard is Brown',
+      films: [Array],
+      species: 'https://ghibliapi.herokuapp.com/species/af3910a6-429f-4c74-9ad5-dfe1c4aa04f2',
+      url: 'https://ghibliapi.herokuapp.com/people/8bccdc78-545b-49f4-a4c8-756163a38c91'
+    },
+    {
+      id: '116bfe1b-3ba8-4fa0-8f72-88537a493cb9',
+      name: 'Hii-sama',
+      gender: 'Female',
+      age: 'Over 50',
+      eye_color: 'Brown',
+      hair_color: 'White',
+      films: [Array],
+      species: 'https://ghibliapi.herokuapp.com/species/af3910a6-429f-4c74-9ad5-dfe1c4aa04f2',
+      url: 'https://ghibliapi.herokuapp.com/people/116bfe1b-3ba8-4fa0-8f72-88537a493cb9'
+    }
+  ]
+}</pre>
+  </div>
+</div>
+    </main>
+  </body>
+</html>
