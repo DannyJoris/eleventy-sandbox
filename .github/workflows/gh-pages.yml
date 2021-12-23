@@ -12,7 +12,7 @@ jobs:
       - name: Install and Build 🔧
         run: |
           npm ci
-          npx @11ty/eleventy
+          npx @11ty/eleventy --pathprefix=eleventy-sandbox
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.8
         with:
